@@ -1,0 +1,98 @@
+@media (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+  .wrap { width: calc(100% - 24px); }
+
+  .valley-bar {
+    min-height: 36px;
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: .06em;
+  }
+
+  .nav {
+    min-height: 66px;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand { font-size: 14px; }
+  .brand img { width: 29px; height: 29px; }
+  .links {
+    margin-left: auto;
+    gap: 12px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .links a:nth-child(2) { display: none; }
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 46px 0 54px;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 14vw, 62px);
+    line-height: .96;
+  }
+  .lead { font-size: 17px; }
+  .buttons { display: grid; grid-template-columns: 1fr; }
+  .button { text-align: center; }
+  .app-store-badge { width: 100%; justify-content: center; }
+  .app-store-badge img { max-width: 100%; height: 48px; }
+
+  .visual { height: 285px; }
+  .app-icon { width: min(210px, 64vw); }
+  .status {
+    right: 8px;
+    bottom: 4px;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .section { padding: 64px 0; }
+  h2 { font-size: 38px; }
+  .sub { font-size: 16px; }
+
+  .grid,
+  .feature-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 30px; }
+  .card,
+  .feature { min-height: 0; padding: 22px; }
+  .card h3 { margin-top: 26px; }
+
+  .screen-gallery { grid-template-columns: 1fr; gap: 28px; margin-top: 30px; }
+  .screen-gallery figure { max-width: 320px; margin: 0 auto; }
+  .screen-gallery img { border-radius: 22px; }
+  .screen-gallery figcaption { padding: 12px 2px 0; }
+
+  .showcase,
+  .action-button { grid-template-columns: 1fr; gap: 34px; }
+  .screens { gap: 12px; justify-content: space-around; }
+  .phone-shot { width: min(45vw, 165px); }
+  .watch-shot { width: min(31vw, 118px); }
+  .screens figcaption { font-size: 10px; }
+
+  .action-button ol { margin-top: 4px; }
+  .notice { margin-bottom: 54px; padding: 18px; }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 28px 0 38px;
+  }
+  .footlinks {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 18px;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrap { width: calc(100% - 20px); }
+  .links { gap: 9px; font-size: 10px; }
+  .hero h1 { font-size: 43px; }
+  h2 { font-size: 34px; }
+  .valley-bar { font-size: 9px; }
+}
