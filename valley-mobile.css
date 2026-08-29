@@ -1,0 +1,116 @@
+@media (max-width: 700px) {
+  html, body { overflow-x: hidden; }
+  .site-shell { width: calc(100% - 24px); }
+
+  .nav {
+    min-height: 68px;
+    gap: 12px;
+  }
+  .wordmark { flex: 0 0 auto; }
+  .wordmark img { width: 34px; height: 34px; }
+  .wordmark span { display: none; }
+  .nav nav {
+    flex: 1;
+    justify-content: flex-end;
+    gap: 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  .nav nav a:nth-child(2) { display: none; }
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 44px 0 64px;
+  }
+  .hero-copy { order: 1; }
+  .brand-stage {
+    order: 2;
+    min-height: 260px;
+  }
+  .brand-stage img { width: min(270px, 76vw); }
+  h1 {
+    margin: 16px 0 22px;
+    font-size: clamp(44px, 13vw, 62px);
+    line-height: .98;
+  }
+  .intro { font-size: 17px; line-height: 1.55; }
+  .actions { display: grid; grid-template-columns: 1fr; width: 100%; }
+  .button { text-align: center; }
+
+  .statement {
+    display: block;
+    padding: 72px 0;
+  }
+  .statement h2 { margin-top: 16px; font-size: 42px; }
+  .statement > p:last-child { margin-top: 24px; font-size: 17px; }
+
+  .apps { padding: 72px 0; }
+  .section-heading { display: block; margin-bottom: 34px; }
+  .section-heading h2 { font-size: 42px; }
+  .section-heading > p { max-width: none; margin-top: 16px; }
+
+  .app-card {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    border-radius: 22px;
+  }
+  .app-copy { padding: 30px 24px 22px; }
+  .status { margin-bottom: 28px; }
+  .app-logo { width: 72px; height: 72px; border-radius: 18px; }
+  .app-copy h3 { margin-top: 22px; font-size: 52px; }
+  .tagline { font-size: 17px; }
+  .description { margin: 18px 0 26px; }
+  .app-visual { min-height: 340px; padding-top: 24px; }
+  .phone { width: min(260px, 72vw); transform: translateY(34px); }
+
+  .coming-soon { padding: 28px 24px; border-radius: 20px; }
+
+  .apps-page { padding-bottom: 64px; }
+  .apps-intro { padding: 54px 0 34px; }
+  .apps-intro h1 { margin: 14px 0 18px; font-size: 52px; }
+  .apps-intro > p:last-child { font-size: 16px; line-height: 1.55; }
+  .apps-catalog { grid-template-columns: 1fr; gap: 14px; }
+  .app-tile,
+  .app-tile.future {
+    min-height: 0;
+    grid-column: auto;
+    padding: 24px;
+    border-radius: 20px;
+  }
+  .app-tile-top { gap: 12px; }
+  .app-tile-icon,
+  .app-placeholder { width: 62px; height: 62px; border-radius: 16px; flex: 0 0 auto; }
+  .app-state {
+    padding: 7px 9px;
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+  }
+  .app-tile-copy { margin-top: 38px; padding-top: 0; }
+  .app-tile-copy h2 { font-size: 38px; }
+  .app-tile-copy p { font-size: 15px; }
+  .app-tile-link { margin-top: 24px; }
+
+  footer {
+    min-height: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 34px 0;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 14px 18px;
+  }
+  footer > p { grid-column: 1; margin: 0; }
+}
+
+@media (max-width: 390px) {
+  .site-shell { width: calc(100% - 20px); }
+  .nav nav { gap: 10px; font-size: 11px; }
+  h1 { font-size: 43px; }
+  .apps-intro h1 { font-size: 46px; }
+  .app-tile { padding: 20px; }
+  .app-state { max-width: 110px; }
+}
