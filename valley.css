@@ -59,9 +59,9 @@ h1 span { background: linear-gradient(115deg, #f4eee5, #a9a7a5 50%, #e2c196); -w
 .description { max-width: 430px; margin: 24px 0 34px; color: var(--muted); line-height: 1.6; }
 .discover { font-size: 14px; font-weight: 750; }
 .discover b { margin-left: 8px; color: var(--safe); }
-.app-visual { position: relative; display: grid; align-items: end; justify-items: center; overflow: hidden; padding-top: 50px; }
-.phone { width: min(330px, 72%); padding: 12px; border-radius: 48px 48px 0 0; background: #050505; box-shadow: 0 40px 100px #000; transform: translateY(52px); }
-.phone img { display: block; width: 100%; border-radius: 37px 37px 0 0; }
+.app-visual { position: relative; display: grid; align-items: center; justify-items: center; overflow: hidden; padding: 50px 0; }
+.phone { width: min(270px, 62%); padding: 12px; border-radius: 48px; background: #050505; box-shadow: 0 40px 100px #000; }
+.phone img { display: block; width: 100%; border-radius: 37px; }
 .app-card + .app-card { margin-top: 20px; }
 .clearlist-card { border-color: rgba(46,232,140,.28); background: radial-gradient(circle at 80% 45%, rgba(46,232,140,.14), transparent 34rem), linear-gradient(145deg, #111714, #0c0d0e 64%); }
 .clearlist-card .tagline, .clearlist-card .discover b { color: var(--clearlist); }
@@ -119,8 +119,8 @@ footer > p { grid-column: 1 / -1; margin: -35px 0 0; color: #666; font-size: 11p
   .apps { padding: 85px 0; }
   .section-heading { display: block; }
   .app-card { grid-template-columns: 1fr; }
-  .app-visual { min-height: 480px; }
-  .phone { width: min(330px, 76%); }
+  .app-visual { min-height: 0; }
+  .phone { width: min(270px, 62%); }
   .apps-intro { padding: 75px 0 50px; }
   .apps-catalog { grid-template-columns: 1fr; }
   .app-tile.future { grid-column: auto; }

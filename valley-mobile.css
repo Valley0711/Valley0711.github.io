@@ -62,8 +62,8 @@
   .app-copy h3 { margin-top: 22px; font-size: 52px; }
   .tagline { font-size: 17px; }
   .description { margin: 18px 0 26px; }
-  .app-visual { min-height: 340px; padding-top: 24px; }
-  .phone { width: min(260px, 72vw); transform: translateY(34px); }
+  .app-visual { min-height: 0; padding: 8px 0 34px; }
+  .phone { width: min(230px, 62vw); }
 
   .coming-soon { padding: 28px 24px; border-radius: 20px; }
 
