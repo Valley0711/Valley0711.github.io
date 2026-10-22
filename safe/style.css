@@ -84,6 +84,14 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--line); display: flex;
 .legal h2 { font-size: 23px; margin-top: 42px; }
 .legal p { color: #c4c4bc; line-height: 1.65; }
 .legal a:not(.back) { color: var(--yellow); font-weight: bold; }
+.legal h3 { font-size: 17px; margin-top: 28px; color: var(--text); }
+.legal ul { color: #c4c4bc; line-height: 1.65; padding-left: 22px; }
+.legal li { margin: 6px 0; }
+.legal b { color: var(--text); }
+.legal table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; color: #c4c4bc; }
+.legal th, .legal td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.legal th { color: var(--text); }
+
 .support { margin-top: 34px; padding: 26px; border: 1px solid #444439; border-radius: 14px; background: var(--panel); }
 .active-link { color: var(--yellow); }
 .functions-hero { padding: 105px 0 84px; }
