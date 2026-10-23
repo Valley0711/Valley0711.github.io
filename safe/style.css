@@ -189,3 +189,6 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--line); display: flex;
   .tile-img { height: 260px; }
   .function-shot.pair { width: min(100%, 330px); gap: 10px; }
 }
+.critical-note { margin-top: 26px; padding: 18px 22px; border: 1px solid #5a2620; border-left: 3px solid #ff5a4e; border-radius: 12px; background: #1f1412; color: #deded5; font-size: 14px; line-height: 1.6; }
+.critical-note b { color: #ff7a6f; }
+.function-copy > p.critical-note { max-width: 520px; color: #deded5; }
