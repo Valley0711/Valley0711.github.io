@@ -158,3 +158,34 @@ footer { padding: 34px 0 48px; border-top: 1px solid var(--line); display: flex;
   .function-detail, .function-detail.reverse { padding: 64px 0; gap: 30px; }
   .function-copy .eyebrow { margin-top: 22px; }
 }
+
+/* SAFE 1.4: Video, Geräte-Bilder mit Apple-Rahmen, Kacheln */
+.tour-video { text-align: center; }
+.tour-video .sub { margin: 0 auto; }
+.video-stage { position: relative; margin: 48px auto 0; width: min(100%, 420px); padding: 22px; background: #000; border: 1px solid #242421; border-radius: 34px; box-shadow: 0 30px 90px rgba(0, 0, 0, .55); }
+.video-stage video { display: block; width: 100%; height: auto; border-radius: 18px; background: #000; }
+.video-note { margin-top: 16px; color: var(--muted); font-size: 13px; }
+.function-shot.device img { border-radius: 0; box-shadow: none; filter: drop-shadow(0 26px 40px rgba(0, 0, 0, .55)); }
+.function-shot.pair { width: min(100%, 470px); display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: end; }
+.function-shot.pair figcaption { grid-column: 1 / -1; }
+.function-shot.wide { width: min(100%, 560px); }
+.function-shot.wide img { border-radius: 22px; }
+.tile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 52px; }
+.tile { padding: 26px 24px 24px; background: var(--panel); border: 1px solid #242421; border-radius: 18px; display: flex; flex-direction: column; }
+.tile-img { height: 300px; display: flex; justify-content: center; align-items: center; margin-bottom: 18px; overflow: hidden; }
+.tile-img img { height: 100%; width: auto; max-width: 100%; object-fit: contain; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .5)); }
+.tile-img.wide img { height: auto; width: 100%; border-radius: 14px; }
+.tile small { color: var(--yellow); font-weight: bold; }
+.tile h3 { margin: 10px 0 8px; font-size: 20px; }
+.tile p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+.privacy-points { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 44px; }
+@media (max-width: 900px) {
+  .tile-grid, .privacy-points { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+  .video-stage { padding: 12px; border-radius: 26px; margin-top: 30px; }
+  .video-stage video { border-radius: 14px; }
+  .tile-grid, .privacy-points { grid-template-columns: 1fr; gap: 12px; margin-top: 30px; }
+  .tile-img { height: 260px; }
+  .function-shot.pair { width: min(100%, 330px); gap: 10px; }
+}
